@@ -61,12 +61,12 @@
                 $queryInfo = array_map('mysql_prep', $_POST);
 
                 // format date for the database
-                $birthDate = date('Y-m-d', strtotime($placeholder));
-                $deathDate = date('Y-m-d', strtotime($placeholder));
-
+                $birthDate = date('Y-m-d', strtotime($placeholder));//! placeholder
+                $deathDate = date('Y-m-d', strtotime($placeholder));//! placeholder
+//! placeholder
                 //* insert steps for attempting image update               
                 $query = "update graves set firstName = \"". $placeholder ."\", middleName = \"". $placeholder ."\", lastName = \"". $placeholder ."\", birthDate = \"". $placeholder ."\", deathDate = \"". $placeholder ."\", imageName = \"". $placeholder ."\" where graveID = ". $placeholder;
-
+//! placeholder
                 // uncomment the line below to see the query before it gets executed
                 // echo $query; exit;
 
@@ -101,12 +101,12 @@
         $queryInfo = array_map('mysql_prep', $_POST);
 
         // format date for the database
-        $birthDate = date('Y-m-d', strtotime($placeholder));
-        $deathDate = date('Y-m-d', strtotime($placeholder));
-
+        $birthDate = date('Y-m-d', strtotime($placeholder));//! placeholder
+        $deathDate = date('Y-m-d', strtotime($placeholder));//! placeholder
+//! placeholder
         //* insert steps without attempting image update               
         $query = "update graves set firstName = \"". $placeholder ."\", middleName = \"". $placeholder ."\", lastName = \"". $placeholder ."\", birthDate = \"". $placeholder ."\", deathDate = \"". $placeholder ."\" where graveID = ". $placeholder;
-
+//! placeholder
         // uncomment the line below to see the query before it gets executed
         // echo $query; exit;
 

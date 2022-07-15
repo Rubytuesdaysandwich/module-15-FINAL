@@ -67,8 +67,8 @@
                             <h2>Sign in</h2>
                             <?php echo message("loginMessage"); ?>
                             <form action="login.php" method="POST">
-                                <input type="text" name="username" placeholder="Username">
-                                <input type="password" name="password" placeholder="Password">
+                                <input type="text" name="username" placeholder="Username">//! placeholder
+                                <input type="password" name="password" placeholder="Password">//! placeholder
                                 <input type="submit" name="login" value="Login">
                             </form>
                         </div><!-- end login -->

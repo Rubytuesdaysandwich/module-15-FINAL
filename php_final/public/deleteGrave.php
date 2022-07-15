@@ -12,7 +12,7 @@
         // get data from grave delete form (graveID and imageName)
         // your code here
 
-        $query = "delete from graves where graveID = $placeholder";
+        $query = "delete from graves where graveID = $placeholder";//! placeholder
         mysqli_query($connection, $query);
 
         if(mysqli_error($connection)) {
@@ -24,7 +24,7 @@
         } else {
 
             // if data successfully removed from database, delete image from uploads folder
-            unlink("assets/img/uploads/{$placeholder}");
+            unlink("assets/img/uploads/{$placeholder}");//! placeholder
 
             // Success
             setMessage("Grave deleted successfully.");

@@ -13,12 +13,12 @@ include("../includes/layouts/header.php");
                     <form class="contact-form" action="processContact.php" method="post">
                         <div class="w3-row">
                             <div class="w3-half">
-                                <input type="text" name="fullName" placeholder="Full Name">
-                                <input type="text" name="subject" placeholder="Subject">
+                                <input type="text" name="fullName" placeholder="Full Name">//! placeholder
+                                <input type="text" name="subject" placeholder="Subject">//! placeholder
                             </div>
                             <div class="w3-half">
-                                <input type="text" name="phone" placeholder="Phone Number">
-                                <input type="email" name="email" placeholder="Email Address">
+                                <input type="text" name="phone" placeholder="Phone Number">//! placeholder
+                                <input type="email" name="email" placeholder="Email Address">//! placeholder
                             </div>
                         </div>
                         <div class="message-box">

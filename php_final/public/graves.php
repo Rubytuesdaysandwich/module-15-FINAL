@@ -68,9 +68,9 @@
                         <label for="lastName">Last Name</label>
                         <input type="text" name="lastName" id="lastName">
                         <label for="birthDate">Birth Date</label>
-                        <input type="date" name="birthDate" id="birthDate" placeholder="November 14, 1986">
+                        <input type="date" name="birthDate" id="birthDate" placeholder="November 14, 1986">//! placeholder
                         <label for="deathDate">Death Date</label>
-                        <input type="date" name="deathDate" id="deathDate" placeholder="November 14, 2186">
+                        <input type="date" name="deathDate" id="deathDate" placeholder="November 14, 2186">//! placeholder
                         <label for="fileToUpload">Grave Image</label>
                         <input type="file" name="fileToUpload" id="fileToUpload" >
                         <input type="submit" name="addGrave" value="Add Grave">
@@ -92,7 +92,7 @@
                     <div class="login Grave scroll">
                         <?php echo message(); ?>
                         <form action="editGrave.php" method="POST" enctype="multipart/form-data">
-                            <input type="hidden" name="graveID" value="<?php echo $grave['graveID']; ?>"> <!-- hint -->
+                            <input type="hidden" name="graveID" value="<?php echo $grave['graveID']; ?>"> <!-- hint -->//! hint
                             <label for="firstName">First Name</label>
                             <input type="text" name="firstName" id="firstName" value="grave first name value">
                             <label for="middleName">Middle Name</label>

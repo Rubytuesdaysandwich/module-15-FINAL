@@ -58,10 +58,10 @@
                 //* format dates for the database
                 // $birthDate = date('Y-m-d', strtotime(***Put birthdate from form here***));
                 // $deathDate = date('Y-m-d', strtotime(***Put birthdate from form here***));
-
-                //* insert steps                
+                //! placeholder 
+                //* insert steps               
                 $query = "insert into graves (firstName, middleName, lastName, birthDate, deathDate, imageName) values(\"". $placeholder ."\", \"". $placeholder ."\", \"". $placeholder ."\", \"". $placeholder ."\", \"". $placeholder ."\", \"". $placeholder ."\")";
-
+//! placeholder
                 // run the query
                 mysqli_query($connection, $query);
                 

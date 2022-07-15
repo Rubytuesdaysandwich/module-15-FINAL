@@ -1,4 +1,9 @@
-<?php // hint: find_all_graves() in includes/functions.php ?>
+<?php // hint: find_all_graves() in includes/functions.php
+require_once ('../includes/functions.php');
+//! hint
+$findgraves=find_all_graves();
+echo $findgraves;
+?>
 
 <?php include("../includes/layouts/header.php"); ?>
 
@@ -18,6 +23,9 @@
         </section><!-- end description -->
 
         <!-- show all graves in a table using data from database -->
+         <?php//todo find_all_graves(); ?>
+
+
         <table class="graves-table">
             <tr>
                 <th>Image</th>

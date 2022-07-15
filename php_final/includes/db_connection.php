@@ -12,4 +12,9 @@
     if(mysqli_connect_errno()){
         die("Database connection failed: " . mysqli_connect_error());
     }
+    function confirm_result_set($result_set) {
+        if (!$result_set) {//if we don't get back a data set
+            exit("Database query failed.");//if database query fails then exit
+        }
+      }
 ?>

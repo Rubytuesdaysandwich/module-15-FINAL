@@ -29,8 +29,10 @@
         global $connection;
 
         // Build and perform database query
-        $query = "select * from graves";
+        $query  = "SELECT * from graves ";
+        $query .= "ORDER BY graveID ASC, position ASC";
         $results = mysqli_query($connection, $query);
+        confirm_result_set($results);
         // Test if there was a query error
 
         return $results;
@@ -45,7 +47,7 @@
         // you may want to return an associative array (mysqli_fetch_assoc())
         // this will most naturally be multiple lines of code
         // your code here
-        $grave = "placeholder";
+        $grave = "placeholder";//! placeholder
 
         return $grave;
     }

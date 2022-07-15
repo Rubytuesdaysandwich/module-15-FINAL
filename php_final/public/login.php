@@ -33,7 +33,7 @@
         // user successfully logged in
         // Mark user as logged in using session value
         // you can use other code to find out what this session value should be called
-        $placeholder = true;
+        $placeholder = true;//! placeholder
         redirect_to('graves.php');
     } else {
         // Failure to log in given user (username or password incorrect)
