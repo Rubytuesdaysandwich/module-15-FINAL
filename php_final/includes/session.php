@@ -40,7 +40,7 @@
     }
     function setLoginMessage($message) {
 
-        $message = $_SESSION['error']??'please try again';
+        $message = 'here';
         return $message;
         // create session variable to hold the login error message
         // "sessionVariable" = $message;
@@ -48,6 +48,8 @@
     }
 
     function setMessage($message) {
+
+        $message= $_SESSION['message'] ??'';
         // create session variable to hold the most recent regular error/success message
         // "SessionVariable" = $message;
         // hint: session.php line 21//! hint

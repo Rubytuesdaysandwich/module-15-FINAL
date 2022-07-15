@@ -6,6 +6,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+ 
     // try to log in assuming user and password are correct
     function attempt_login($username, $password) {
         $user = find_user_by_username($username);
@@ -26,14 +27,20 @@
             return false;
         }
     }
+    var_dump($_POST);
     // part 2
     // was user successfully logged in?
-    if(attempt_login($username, $password)) {
+    if(attempt_login($username, $password)) {   
+        
+          
+            $_SESSION['username'] = $user;//asks for the username
+              
+        
         // user successfully logged in
         // Mark user as logged in using session value
         // you can use other code to find out what this session value should be called
-        $message = true;//! placeholder
-        redirect_to('graves.php');
+        $_SESSION['loggedIn'] = true; //if session logged in is true log in from functions.php
+        redirect_to('graves.php');//if successful take the user to graves.php
     } else {
         // Failure to log in given user (username or password incorrect)
         setLoginMessage("Username/password not found.");

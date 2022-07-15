@@ -1,8 +1,8 @@
 <?php include_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/session.php"); ?>
 <?php include_once("../includes/functions.php"); ?>
-<?php confirm_logged_in(); ?>
-//todo part 2
+<?php confirm_logged_in();//confirm loggedin functions.php ?>
+
 <?php include("../includes/layouts/header.php"); ?>
 
 <?php 
