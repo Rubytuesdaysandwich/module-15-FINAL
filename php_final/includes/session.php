@@ -21,7 +21,7 @@
 
     // this function is designed to handle multiple types of messages (login messages and grave form messages)
     function message($type = "graveMessage") {
-        
+        //!part 4--------------------------------------------------
         // remove this as part of your changes
         $_SESSION["dummy_value"] = "part 4 code needed here";
         $type = "dummy_value";
@@ -41,6 +41,7 @@
     }
 
     function setLoginMessage($message) {
+
         // create session variable to hold the login error message
         // "sessionVariable" = $message;
         // hint: Header.php line 68//! hint

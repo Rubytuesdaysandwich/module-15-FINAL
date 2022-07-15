@@ -1,7 +1,7 @@
 <?php
 
     /*----------- helper functions -----------------*/
-
+require_once('db_connection.php');
     // redirect to given page
     function redirect_to($new_page) {
         header("Location: $new_page");
@@ -25,12 +25,13 @@
 
     // part 1
     // get all graves from the database
+    
     function find_all_graves() {
         global $connection;
 
         // Build and perform database query
-        $query  = "SELECT * from graves ";
-        $query .= "ORDER BY graveID ASC, position ASC";
+        $query  = "SELECT * FROM graves ";
+        $query .= "ORDER BY graveID ASC";
         $results = mysqli_query($connection, $query);
         confirm_result_set($results);
         // Test if there was a query error
@@ -51,7 +52,7 @@
 
         return $grave;
     }
-
+//todo part 2
     // part 2
     // check if user still logged in
     function logged_in() {

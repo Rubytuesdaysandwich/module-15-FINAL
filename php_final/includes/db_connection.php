@@ -16,5 +16,5 @@
         if (!$result_set) {//if we don't get back a data set
             exit("Database query failed.");//if database query fails then exit
         }
-      }
-?>
+    }
+ ?>

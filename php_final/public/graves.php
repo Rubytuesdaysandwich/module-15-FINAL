@@ -2,7 +2,7 @@
 <?php require_once("../includes/session.php"); ?>
 <?php include_once("../includes/functions.php"); ?>
 <?php confirm_logged_in(); ?>
-
+//todo part 2
 <?php include("../includes/layouts/header.php"); ?>
 
 <?php 

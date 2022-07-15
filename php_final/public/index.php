@@ -1,8 +1,7 @@
 <?php // hint: find_all_graves() in includes/functions.php
 require_once ('../includes/functions.php');
-//! hint
-$findgraves=find_all_graves();
-echo $findgraves;
+$findgraves=find_all_graves();//query database
+
 ?>
 
 <?php include("../includes/layouts/header.php"); ?>
@@ -23,9 +22,6 @@ echo $findgraves;
         </section><!-- end description -->
 
         <!-- show all graves in a table using data from database -->
-         <?php//todo find_all_graves(); ?>
-
-
         <table class="graves-table">
             <tr>
                 <th>Image</th>
@@ -34,12 +30,15 @@ echo $findgraves;
                 <th>Death Date</th>
             </tr>
             <!-- start some kind of loop -->
+            
+            <?php while($graveitem = mysqli_fetch_assoc($findgraves)){?>
             <tr>
-                <td>grave image from uploads folder and database data</td>
-                <td>grave name from database data (first middle last)</td>
-                <td>grave Birth Date from database data</td>
-                <td>grave Death Date from database data</td>
+                <td><img src="assets/img/uploads/<?php echo $graveitem['imageName'];?>" alt=""><!--grave image from uploads folder and database data--></td>
+                <td><?php echo $graveitem['firstName'] . " " .$graveitem['middleName'] . " " . $graveitem['lastName'];?><!--grave name from database data (first middle last)--></td>
+                <td><?php echo $graveitem['birthDate'];?><!--grave Birth Date from database data--></td>
+                <td><?php echo $graveitem['deathDate'];?><!--grave Death Date from database data--></td>
             </tr>
+           <?php }//end while loop?>
             <!-- end some kind of loop -->
         </table><!-- end graves-table -->
 
