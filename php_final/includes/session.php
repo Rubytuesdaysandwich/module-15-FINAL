@@ -40,7 +40,7 @@
     }
     function setLoginMessage($message) {
 
-        $message = 'here';
+        $message = 'welcome';
         return $message;
         // create session variable to hold the login error message
         // "sessionVariable" = $message;

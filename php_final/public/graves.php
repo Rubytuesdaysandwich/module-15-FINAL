@@ -7,6 +7,7 @@
 
 <?php 
     $graves = find_all_graves(); // finish this function in includes/functions.php
+
 ?>
 
 <!-- =============== Graves Heading =============== -->

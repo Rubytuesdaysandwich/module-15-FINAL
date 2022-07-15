@@ -35,8 +35,8 @@ $findgraves=find_all_graves();//query database
             <tr>
                 <td><img src="assets/img/uploads/<?php echo $graveitem['imageName'];?>" alt=""><!--grave image from uploads folder and database data--></td>
                 <td><?php echo $graveitem['firstName'] . " " .$graveitem['middleName'] . " " . $graveitem['lastName'];?><!--grave name from database data (first middle last)--></td>
-                <td><?php echo $graveitem['birthDate'];?><!--grave Birth Date from database data--></td>
-                <td><?php echo $graveitem['deathDate'];?><!--grave Death Date from database data--></td>
+                <td><?php echo date('F j, Y', strtotime($graveitem['birthDate']));?><!--grave Birth Date from database data--></td>
+                <td><?php echo date('F j, Y', strtotime($graveitem['deathDate']));?><!--grave Death Date from database data--></td>
             </tr>
            <?php }//end while loop?>
             <!-- end some kind of loop -->
