@@ -18,7 +18,6 @@
         // return false if there is no message
         return false;
     }
-
     // this function is designed to handle multiple types of messages (login messages and grave form messages)
     function message($type = "graveMessage") {
         //!part 4--------------------------------------------------
@@ -39,9 +38,10 @@
 
         return $output;
     }
-
     function setLoginMessage($message) {
 
+        $message = $_SESSION['error']??'please try again';
+        return $message;
         // create session variable to hold the login error message
         // "sessionVariable" = $message;
         // hint: Header.php line 68//! hint
