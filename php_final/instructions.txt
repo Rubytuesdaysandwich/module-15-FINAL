@@ -1,0 +1,49 @@
+For this project, we're going to be working on a site you may have worked on before, the Grave Site. It's kind of a clone of the popular family history site findagrave. (Links to an external site.) Though you may be familiar with the Grave Site from previous classes, we are going to be using prebuilt Grave Site code for this class final rather than any code made before. 
+
+Download Code Download Download Code
+
+To spin up the project, you'll need to use the provided SQL file to get the needed database structure, data, and MySQL user in place before you start. The provided PHP code has areas where things are intentionally missing and you need to put the right code in those places to complete the tasks below. Hint: It may be beneficial to search the project for "hint" and "placeholder" to get an idea of where you need to be working. Also, contained in the provided project files are a number of gravestone images for you to use during your development (if you want to test inserting a new grave, etc).
+
+To log in, the username is chuck and the password is norris.
+
+Part 1. Display graves on the index page
+Using techniques taught in the class, get database operations coded up to retrieve all the graves.
+There is a function in the functions file (includes/functions.php) that you can make and use for this.
+Use the retrieved data to populate the graves table on the index page.
+Images that go along with the graves db data are stored in assets/img/uploads.
+Part 2. Add a session login variable
+Reference login code to find where a session variable is needed. 
+Name the session variable the right thing based on the code that uses it.
+Add a session variable to the code.
+Hint: login modal, login.php, functions.php, top of graves.php
+
+Part 3. Get full CRUD working on the graves page using the provided backend code
+Reference code to wire up post data and get add_grave form working, including image name.
+Use retrieval code (to fill in the update modal) and post data (to flesh out the db query) to get the edit_grave button functional.
+Use post data (from the graves table) to wire up the given delete code, remove the grave from the database, and delete the grave's image from the uploads folder.
+Hint: grave.php - add grave modal, grave.php - update grave modal, addGrave.php, editGrave.php, deleteGrave.php
+
+Part 4. Add a session variable to the code so error messages come through
+Find where error message html code would live.
+Remove dummy code and add code (session variables) where needed to output the messages.
+Hint: session.php, graves.php, login modal
+
+Requirements
+For the final project you will need to do the following:
+
+On the index.php page
+Retrieve all graves from the database
+Display all graves and associated images in the table on the index.php page
+Create a session login variable
+Give the session variable the correct name based on the code
+Add the session variable to the code
+Complete the CRUD code for the graves
+Complete the code that adds new graves to the database
+Complete the code to retrieve and display all graves in the database
+Complete the code to edit graves
+Complete the code to delete graves from the database
+This will include removing the image of the grave from the database
+Create a session variable for the error codes
+Remove the dummy code for the error session variable
+Add code where needed to output the error messages
+Add at least one comment for every variable and function you created
